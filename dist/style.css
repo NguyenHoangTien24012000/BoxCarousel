@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.layout-carousel {
+  width: 656px;
+  margin: 10px auto;
+  padding: 10px;
+  height: 334px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+}
+.layout-carousel .carousel-logo {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.layout-carousel .carousel-logo .logo-image {
+  width: 34px;
+  height: 37px;
+}
+.layout-carousel .content-carousel {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+}
+.layout-carousel .carousel-container {
+  width: 100%;
+  margin-top: 5px;
+}
+.layout-carousel .carousel-container .track {
+  width: 100%;
+  display: flex;
+  transition: all 0.5s;
+}
+.layout-carousel .card-container {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  width: 180px;
+  height: 280px;
+  margin: 0 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.layout-carousel .card-container .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.layout-carousel .card-container .card .card-img {
+  width: 100%;
+  height: 100%;
+}
+.layout-carousel .card-container .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layout-carousel .card-button {
+  position: absolute;
+  right: 9px;
+  bottom: 10px;
+  cursor: pointer;
+}
+.layout-carousel .card-button .button-gray {
+  border-radius: 3px;
+  width: 160px;
+  height: 35px;
+  background-color: #f6f6f6;
+  border: 1px solid #c2c2c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layout-carousel .card-button .button-gray:hover {
+  background-color: #dbdbdb;
+  border-color: #a3a3a3;
+}
+.layout-carousel .card-button .button-gray.active {
+  background-color: #dbdbdb;
+  border-color: #a3a3a3;
+}
+.layout-carousel .card-button .text-button {
+  color: #262626;
+  font-weight: 400;
+  font-size: 15px;
+}
+.layout-carousel .controls {
+  transition: all 0.5s;
+}
+.layout-carousel .controls .controls-overplay-left {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 45px;
+  height: 297px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.79) 0%, rgba(255, 255, 255, 0) 100%) !important;
+  display: none;
+}
+.layout-carousel .controls .controls-overplay-right {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 297px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.79) 0%, rgba(255, 255, 255, 0) 100%) !important;
+}
+.layout-carousel .controls .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.layout-carousel .controls .arrow.left {
+  top: 135px;
+  left: 10px;
+  width: 26px;
+  font-size: 20px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.layout-carousel .controls .arrow.left svg {
+  width: 7px;
+}
+.layout-carousel .controls .arrow.right {
+  top: 135px;
+  right: 5px;
+  width: 26px;
+  font-size: 20px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.layout-carousel .controls .arrow.right svg {
+  width: 7px;
+}
+.layout-carousel .controls .arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/*# sourceMappingURL=style.css.map */

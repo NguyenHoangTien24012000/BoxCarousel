@@ -1,0 +1,145 @@
+@import "./reset.scss";
+
+.layout-carousel {
+    width: 656px;
+    margin: 10px auto;
+    padding: 10px;
+    height: 334px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    .carousel-logo {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        .logo-image {
+            width: 34px;
+            height: 37px;
+        }
+    }
+    .content-carousel {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .carousel-container {
+        width: 100%;
+        margin-top: 5px;
+        .track {
+            width: 100%;
+            display: flex;
+            transition: all 0.5s;
+        }
+    }
+    .card-container {
+        box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+        flex-shrink: 0;
+        width: 180px;
+        height: 280px;
+        margin: 0 5px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .card-img {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .card-button {
+        position: absolute;
+        right: 9px;
+        bottom: 10px;
+        cursor: pointer;
+
+        .button-gray {
+            border-radius: 3px;
+            width: 160px;
+            height: 35px;
+            background-color: #f6f6f6;
+            border: 1px solid #c2c2c2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: #dbdbdb;
+                border-color: #a3a3a3;
+            }
+            &.active {
+                background-color: #dbdbdb;
+                border-color: #a3a3a3;
+            }
+        }
+        .text-button {
+            color: #262626;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+    .controls {
+        transition: all 0.5s;
+        .controls-overplay-left{
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            width: 45px;
+            height: 297px;
+            background: linear-gradient(90deg,rgba(255,255,255,0.79) 0%,rgba(255,255,255,0) 100%)!important;
+            display: none;
+        }
+        .controls-overplay-right{
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            width: 45px;
+            height: 297px;
+            background: linear-gradient(270deg,rgba(255,255,255,0.79) 0%,rgba(255,255,255,0) 100%)!important;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        
+            background-color: rgba(255,255,255,0.7);
+            &.left {
+                top: 135px;
+                left: 10px;
+                width: 26px;
+                font-size: 20px;
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                svg {
+                    width: 7px;
+                }
+            }
+            &.right {
+                top: 135px;
+                right: 5px;
+                width: 26px;
+                font-size: 20px;
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                svg {
+                    width: 7px;
+                }
+            }
+            &:hover{
+                background-color: rgba(255,255,255,0.9);
+            }
+        }
+    }
+}
