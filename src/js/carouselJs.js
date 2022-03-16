@@ -8,7 +8,7 @@ const $ = function (selector) {
     let cardWidth = slider.querySelector('.card-container').offsetWidth + 10;
     //So luong the con
     let numberItem = slider.querySelectorAll('.track .card-container').length;
-
+    
     let overlayLeft = slider.querySelector('.controls-overplay-left');
 
     let current = 0;
