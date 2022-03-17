@@ -10,14 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-batch-replace": "0.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-minify": "^3.1.0",
     "gulp-replace": "^1.1.3",
     "gulp-sass": "^5.0.0",
-    "sass": "^1.43.4",
-    "gulp-batch-replace": "0.0.0"
+    "sass": "^1.43.4"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
+    "libCoreJs": "git+https://lab.admicro.vn/corejs/lib.git",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   }

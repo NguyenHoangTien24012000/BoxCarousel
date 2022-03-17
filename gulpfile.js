@@ -33,7 +33,7 @@ gulp.task('compress', function () {
 
 //task SASS
 gulp.task('sassTask', function () {
-  return src('src/sass/style.scss', { sourcemaps: true })
+  return src('src/sass/BoxTuThuoc/styleBox1.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(dest('dist', { sourcemaps: '.' }));
 });

@@ -1,0 +1,28 @@
+@import "./reset.scss";
+
+.box{
+    width: 300px;
+    height: 600px;
+    .box__brand{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        .box__brand--left{
+            display: flex;
+        }
+        .brand__text--left{
+             margin-left: 7px;
+             margin-top: 3px;
+             .text--content{
+                color: #236C62;
+                line-height :16.41px;
+             }
+        }
+        .box__logo--right{
+            .logo--svg{
+                
+            }
+        }
+    }
+
+}
