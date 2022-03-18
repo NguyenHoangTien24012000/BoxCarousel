@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.box {
+  overflow: hidden;
+  width: 300px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.box .box__brand {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  padding-bottom: 0;
+}
+.box .box__brand .box__brand--left {
+  display: flex;
+}
+.box .box__brand .brand__text--left {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+.box .box__brand .brand__text--left .text--content {
+  color: #236c62;
+  line-height: 16.41px;
+}
+.box .box__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.box .box__content .content__border {
+  width: 10px;
+  height: 77px;
+  background-color: #18796880;
+}
+.box .box__content .content__image {
+  width: 280px;
+  height: 157px;
+  background-color: #e5e5e5;
+}
+.box .box__carousel {
+  margin: 0 10px;
+}
+.box .box__carousel .line__item {
+  border-top: 1px dotted #e5e5e5;
+}
+.box .box__carousel .control {
+  margin-left: 2px;
+  display: flex;
+}
+.box .box__carousel .control__text .text__content {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+.box .box__carousel .line__container {
+  margin-top: 7px;
+  width: 100%;
+}
+.box .box__carousel .control__button {
+  margin-left: 9px;
+  display: flex;
+}
+.box .box__carousel .button__item {
+  cursor: pointer;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #20c8a866;
+}
+.box .box__carousel .button__item.active {
+  background-color: #20c8a8;
+}
+.box .box__carousel .carousel__item {
+  padding: 11px 0 15px;
+  display: flex;
+}
+.box .box__carousel .item__left {
+  margin-right: 10px;
+}
+.box .box__carousel .carousel__item--image {
+  width: 79px;
+  height: 79px;
+}
+.box .box__carousel .carousel__item--image .item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .box__carousel .item__right .item__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.box .box__carousel .item__right .item__detail {
+  font-size: 12px;
+  font-weight: 400;
+  color: #656565;
+  margin-bottom: 24px;
+}
+.box .box__carousel .item__right .carousel__item--button {
+  display: flex;
+  justify-content: end;
+}
+.box .box__note {
+  width: 100%;
+  height: 77px;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+}
+.box .box__note .note__content {
+  position: absolute;
+  bottom: 16px;
+  margin: 0 14px;
+}
+.box .box__note .note__content .note__text {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+}
+.box .box__note .note__content .note__text--small {
+  font-weight: 300;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=styleBox2.css.map */
