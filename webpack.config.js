@@ -1,7 +1,7 @@
 const path = require('path');
 // const loader = require("file-loader")
 module.exports = {
-    entry : './src/js/replaceData.js',
+    entry : './src/test/renderBoxThuoc.js',
     output : {
         filename : "index.js",
         path : path.resolve(__dirname, 'build')

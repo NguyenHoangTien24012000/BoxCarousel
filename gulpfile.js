@@ -33,7 +33,7 @@ gulp.task('compress', function () {
 
 //task SASS
 gulp.task('sassTask', function () {
-  return src('src/sass/BoxTuThuoc/styleBox3.scss', { sourcemaps: true })
+  return src('src/sass/BoxTuThuoc/styleBox4.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(dest('dist', { sourcemaps: '.' }));
 });
@@ -45,14 +45,14 @@ gulp.task('sassTaskBox1', function () {
 });
 
 // replace
-const cssContent = fs.readFileSync("src/layout/style.css", "utf-8");
+const cssContent = fs.readFileSync("src/layout/TuThuoc1/style.css", "utf-8");
 
-const htmlContent = fs.readFileSync("src/layout/layoutCarousel.html", "utf-8");
+const htmlContent = fs.readFileSync("src/layout/TuThuoc1/layout.html", "utf-8");
 
-const jsContent = fs.readFileSync("src/js/carouselJs.js", "utf8");
+const jsContent = fs.readFileSync("src/js/BoxTuThuoc/boxTuThuoc1.js", "utf8");
 
-gulp.task('carouselJs', function () {
-  return gulp.src(['src/js/renderCarousel.js'])
+gulp.task('tuThuocRender', function () {
+  return gulp.src(['src/js/renderBoxThuoc.js'])
     .pipe(replace('%%css%%', cssContent))
     .pipe(replace('%%html%%', htmlContent))
     .pipe(replace('%%js%%', jsContent))
@@ -66,8 +66,8 @@ const htmlContent1 = fs.readFileSync("src/layout/Box1/layout.html", "utf-8");
 
 // const jsContent1 = fs.readFileSync("src/js/renderBox1.js", "utf8");
 
-gulp.task('renderBox1', function () {
-  return gulp.src(['src/js/renderBox1.js'])
+gulp.task('renderBoxThuoc', function () {
+  return gulp.src(['src/js/renderBoxThuoc.js'])
     .pipe(replace('%%css%%', cssContent1))
     .pipe(replace('%%html%%', htmlContent1))
     .pipe(gulp.dest('src/test'));

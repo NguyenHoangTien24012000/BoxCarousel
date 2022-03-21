@@ -1,7 +1,7 @@
-function renderCarousel(){
+function renderCarousel(element){
 	this.css=`%%css%%`;
 	this.html=`%%html%%`;
-	document.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+	document.querySelector(`#${element}`).innerHTML = `<style>${this.css}</style>${this.html}`;
 }
 renderCarousel()
 

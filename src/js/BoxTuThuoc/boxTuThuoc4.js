@@ -1,11 +1,11 @@
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector('#'+selector);
+    let slider = document.querySelector(`#${selector}`);
 
-    let carousel = slider.querySelector('.carousel__container');
+    let carousel = slider.querySelector('.carousel__content');
 
     //Kich thuoc the con + 10px margin
-    let cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
+    let cardWidth = slider.querySelector('.carousel__item').offsetWidth;
 
     //So luong the con
     let numberItem = slider.querySelectorAll('.carousel__item').length;
@@ -32,12 +32,7 @@ const carouselBox = function (selector) {
             item.addEventListener('click', () => {
                 activeElenment()
                 item.classList.add('active')
-                if (index === numberItem - 1) {
-                    carousel.style.transform = 'translateX(-'+(cardWidth * index - 75)+'px )';
-                }else{
-                    carousel.style.transform = 'translateX(-'+cardWidth * index+'px )';
-                }
-             
+                carousel.style.transform = `translateX(-${cardWidth * index}px )`;
             });
         });
     }

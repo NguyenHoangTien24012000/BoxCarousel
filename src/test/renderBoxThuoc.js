@@ -1,5 +1,7 @@
-function renderCarousel(element){
-	this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+function renderCarousel(){
+	var $=document.querySelector.bind(document);
+    this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +153,7 @@ body {
   opacity: 0.9;
 }
 `;
-	this.html=`<div class="box">
+	this.html=`<div class="box" id="box__tuThuoc">
     <div class="box__container">
         <div class="box__brand">
             <div class="box__brand--left">
@@ -244,14 +246,13 @@ body {
         </div>
     </div>
 </div>`;
-	document.querySelector(`#${element}`).innerHTML = `<style>${this.css}</style>${this.html}`;
-}
-renderCarousel()
+    var ifr=$('#iframe01');
+    var io=ifr.contentWindow;
+    io.document.write(`<style>${this.css}</style>${this.html}
+    <script>
+    const carouselBox = function (selector) {
 
-function jsCarousel(){
-	const carouselBox = function (selector) {
-
-    let slider = document.querySelector(`#${selector}`);
+    let slider = document.querySelector('#'+selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -284,9 +285,9 @@ function jsCarousel(){
                 activeElenment()
                 item.classList.add('active')
                 if (index === numberItem - 1) {
-                    carousel.style.transform = `translateX(-${cardWidth * index - 75}px )`;
+                    carousel.style.transform = 'translateX(-'+(cardWidth * index - 75)+'px )';
                 }else{
-                    carousel.style.transform = `translateX(-${cardWidth * index}px )`;
+                    carousel.style.transform = 'translateX(-'+cardWidth * index+'px )';
                 }
              
             });
@@ -297,5 +298,8 @@ function jsCarousel(){
 
 carouselBox('box__tuThuoc');
 
+    <\/script>
+    `);
+    io.document.close();
 }
-jsCarousel();
+renderCarousel()

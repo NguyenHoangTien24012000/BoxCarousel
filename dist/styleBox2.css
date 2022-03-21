@@ -64,7 +64,7 @@ body {
   height: 10px;
   margin-left: 2px;
   display: flex;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .box .box__carousel .control__text .text__content {
   font-size: 14px;
@@ -96,7 +96,7 @@ body {
 .box .box__carousel .carousel__container {
   position: absolute;
   top: 14px;
-  height: 95%;
+  height: 94%;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
 }

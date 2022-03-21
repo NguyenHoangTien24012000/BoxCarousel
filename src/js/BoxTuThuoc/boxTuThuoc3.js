@@ -1,6 +1,6 @@
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector('#'+selector);
+    let slider = document.querySelector(`#${selector}`);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -11,7 +11,7 @@ const carouselBox = function (selector) {
     let numberItem = slider.querySelectorAll('.carousel__item').length;
 
     function createNodeChildLi() {
-        for (let i = 0; i < numberItem; i++) {
+        for (let i = 0; i < 3; i++) {
             var li = document.createElement("li");
             li.classList.add("control__item")
             li.setAttribute("index", i)
@@ -32,12 +32,10 @@ const carouselBox = function (selector) {
             item.addEventListener('click', () => {
                 activeElenment()
                 item.classList.add('active')
-                if (index === numberItem - 1) {
-                    carousel.style.transform = 'translateX(-'+(cardWidth * index - 75)+'px )';
-                }else{
-                    carousel.style.transform = 'translateX(-'+cardWidth * index+'px )';
-                }
-             
+
+                carousel.style.transform = `translateX(-${cardWidth * index * 3}px )`;
+
+
             });
         });
     }

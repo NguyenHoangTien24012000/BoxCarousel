@@ -54,7 +54,7 @@
             height: 10px;
             margin-left: 2px;
             display: flex;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
         .control__text {
             .text__content {
@@ -88,7 +88,7 @@
         .carousel__container {
             position: absolute;
             top: 14px;
-            height: 95%;
+            height: 94%;
             overflow-y: auto;
             scroll-snap-type: y mandatory;
             &::-webkit-scrollbar {

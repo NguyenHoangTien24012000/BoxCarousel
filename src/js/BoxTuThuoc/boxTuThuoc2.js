@@ -1,3 +1,6 @@
+{
+
+
 const carouselBox = function (selector) {
 
     let slider = document.querySelector(`#${selector}`);
@@ -55,3 +58,4 @@ const carouselBox = function (selector) {
 }
 
 carouselBox('box__tuThuoc');
+}

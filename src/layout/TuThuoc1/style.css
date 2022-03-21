@@ -11,8 +11,8 @@ body {
 
 .box {
   overflow: hidden;
-  width: 660px;
-  height: 408px;
+  width: 300px;
+  height: 600px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -63,8 +63,7 @@ body {
   display: flex;
   list-style: none;
   position: absolute;
-  left: 16%;
-  bottom: 0;
+  left: 18%;
 }
 .box .box__carousel .control .control__item {
   width: 6px;
@@ -74,7 +73,7 @@ body {
   background-color: #cecece;
 }
 .box .box__carousel .control .control__item.active {
-  background-color: white;
+  background-color: #656565;
 }
 .box .box__carousel .carousel__container {
   transition: all 0.5s;
@@ -139,10 +138,8 @@ body {
   position: absolute;
   bottom: 16px;
   margin: 0 14px;
-  width: 100%;
 }
 .box .box__note .note__content .note__text {
-  text-align: center;
   font-size: 10px;
   color: #fff;
   font-weight: 700;
@@ -152,4 +149,3 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
-/*# sourceMappingURL=styleBox3.css.map */
