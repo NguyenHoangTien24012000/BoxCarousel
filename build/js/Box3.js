@@ -1,7 +1,5 @@
-
-function renderCarousel(){
-	var $=document.querySelector.bind(document);
-    this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+function renderBox() {
+	this.css = `@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +62,7 @@ body {
   padding-left: 4px;
 }
 .box .box__carousel .control {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 .box .box__carousel .control .control__container {
   display: flex;
@@ -132,19 +130,19 @@ body {
   font-size: 10px;
   border-radius: 10px;
   cursor: pointer;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box .box__note {
   width: 100%;
   height: 77px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
   position: absolute;
   bottom: 0;
 }
 .box .box__note .note__content {
   position: absolute;
-  bottom: 16px;
+  bottom: 11px;
   margin: 0 14px;
   width: 100%;
 }
@@ -160,7 +158,7 @@ body {
   opacity: 0.9;
 }
 /*# sourceMappingURL=styleBox3.css.map */`;
-	this.html=`<div class="box" id="box__tuThuoc">
+	this.html = `<div class="box" id="box__tuThuoc">
     <div class="box__container">
         <div class="box__brand">
             <div class="box__brand--left">
@@ -285,13 +283,22 @@ body {
         </div>
     </div>
 </div>`;
-    var ifr=$('#iframe01');
-    var io=ifr.contentWindow;
-    io.document.write(`<style>${this.css}</style>${this.html}
+	var elem = document.createElement("iframe")
+	Object.assign(elem, {
+		id: 'myIframe',
+		height: 408, // pixels
+		width: 660, // pixels
+		frameBorder : 0
+	})
+	document.getElementById('myDiv').appendChild(elem)
+	let iframe = document.getElementById("myIframe");
+	let doc = iframe.contentWindow
+	// doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+	doc.document.write(`<style>${this.css}</style>${this.html}
     <script>
     const carouselBox = function (selector) {
 
-    let slider = document.getElementById('selector');
+    let slider = document.getElementById(selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -300,6 +307,7 @@ body {
 
     //So luong the con
     // let numberItem = slider.querySelectorAll('.carousel__item').length;
+    let current = 0;
 
     function createNodeChildLi() {
         for (let i = 0; i < 3; i++) {
@@ -321,21 +329,38 @@ body {
     function carouselAction() {
         slider.querySelectorAll('.control__item').forEach((item, index) => {
             item.addEventListener('click', () => {
+                current = index
                 activeElenment()
                 item.classList.add('active')
-
                 carousel.style.transform = 'translateX(-'+cardWidth * index * 3 + 'px )';
 
 
             });
         });
     }
+    function carouselAuto() {
+        activeElenment()
+        slider.querySelectorAll('.control__item').forEach((item,index) =>{
+            if(index === current){
+                item.classList.add('active')
+            }
+        })
+        if (current === 2) {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current = 0;
+        } else {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current += 1;
+        }
+    }
+    setInterval(carouselAuto, 3000)
+
     return createNodeChildLi(), carouselAction();
 }
 
 carouselBox('box__tuThuoc');
     <\/script>
     `);
-    io.document.close();
+    doc.document.close();
 }
-renderCarousel()
+renderBox()

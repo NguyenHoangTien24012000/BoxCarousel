@@ -1,6 +1,6 @@
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector(`#${selector}`);
+    let slider = document.getElementById(selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -8,7 +8,8 @@ const carouselBox = function (selector) {
     let cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
 
     //So luong the con
-    let numberItem = slider.querySelectorAll('.carousel__item').length;
+    // let numberItem = slider.querySelectorAll('.carousel__item').length;
+    let current = 0;
 
     function createNodeChildLi() {
         for (let i = 0; i < 3; i++) {
@@ -30,15 +31,32 @@ const carouselBox = function (selector) {
     function carouselAction() {
         slider.querySelectorAll('.control__item').forEach((item, index) => {
             item.addEventListener('click', () => {
+                current = index
                 activeElenment()
                 item.classList.add('active')
-
-                carousel.style.transform = `translateX(-${cardWidth * index * 3}px )`;
+                carousel.style.transform = 'translateX(-'+cardWidth * index * 3 + 'px )';
 
 
             });
         });
     }
+    function carouselAuto() {
+        activeElenment()
+        slider.querySelectorAll('.control__item').forEach((item,index) =>{
+            if(index === current){
+                item.classList.add('active')
+            }
+        })
+        if (current === 2) {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current = 0;
+        } else {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current += 1;
+        }
+    }
+    setInterval(carouselAuto, 3000)
+
     return createNodeChildLi(), carouselAction();
 }
 

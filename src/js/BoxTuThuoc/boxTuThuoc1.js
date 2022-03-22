@@ -1,6 +1,6 @@
-const carouselBox = function (selector) {
+{const carouselBox = function (selector) {
 
-    let slider = document.querySelector('#'+selector);
+    let slider = document.querySelector('#' + selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -26,22 +26,40 @@ const carouselBox = function (selector) {
             item.classList.remove("active")
         });
     }
-
+    let current = 1;
     function carouselAction() {
         slider.querySelectorAll('.control__item').forEach((item, index) => {
             item.addEventListener('click', () => {
                 activeElenment()
+                current = index
                 item.classList.add('active')
                 if (index === numberItem - 1) {
-                    carousel.style.transform = 'translateX(-'+(cardWidth * index - 75)+'px )';
-                }else{
-                    carousel.style.transform = 'translateX(-'+cardWidth * index+'px )';
+                    carousel.style.transform = 'translateX(-' + (cardWidth * index - 75) + 'px )';
+                } else {
+                    carousel.style.transform = 'translateX(-' + cardWidth * index + 'px )';
                 }
-             
+
             });
         });
     }
+    function carouselAuto() {
+        activeElenment()
+        slider.querySelectorAll('.control__item').forEach((item,index) =>{
+            if(index === current){
+                item.classList.add('active')
+            }
+        })
+        if (current === 2) {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current - 75) + 'px )';
+            current = 0;
+        } else {
+            carousel.style.transform = 'translateX(-' + cardWidth * current + 'px )';
+            current += 1;
+        }
+    }
+    setInterval(carouselAuto, 3000)
     return createNodeChildLi(), carouselAction();
 }
 
 carouselBox('box__tuThuoc');
+}

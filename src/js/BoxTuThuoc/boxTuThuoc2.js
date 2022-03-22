@@ -3,7 +3,7 @@
 
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector(`#${selector}`);
+    let slider = document.getElementById(selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
