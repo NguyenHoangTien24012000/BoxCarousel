@@ -1,9 +1,7 @@
-{
-
 
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector(`#${selector}`);
+    let slider = document.querySelector('#'+selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -53,9 +51,6 @@ const carouselBox = function (selector) {
         }
     })
 
-
-    return
 }
 
 carouselBox('box__tuThuoc');
-}

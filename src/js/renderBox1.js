@@ -4,16 +4,18 @@ function renderBox() {
 	var elem = document.createElement("iframe")
 	Object.assign(elem, {
 		id: 'myIframe',
-		src: 'https://dummyimage.com/320x240/ccc/fff.jpg',
-		height: 120, // pixels
-		width: 160, // pixels
-		onclick: function () {
-			alert('Clicked!')
-		}
+		height: 600, // pixels
+		width: 300, // pixels
+		frameBorder: 0
 	})
-	document.body.appendChild(elem)
+	document.querySelector('#myDiv').appendChild(elem)
 	let iframe = document.getElementById("myIframe");
-	let doc = iframe.contentWindow.document;
-	doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+	let doc = iframe.contentWindow;
+	// doc.querySelector('body').wr = `<style>${this.css}</style>${this.html}`;
+	doc.document.write(`<style>${this.css}</style>${this.html}
+    <script>
+    %%js%%
+    <\/script>
+    `);
 }
 renderBox()

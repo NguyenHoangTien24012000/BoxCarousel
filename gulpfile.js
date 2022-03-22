@@ -52,7 +52,7 @@ const htmlContent = fs.readFileSync("src/layout/TuThuoc1/layout.html", "utf-8");
 const jsContent = fs.readFileSync("src/js/BoxTuThuoc/boxTuThuoc1.js", "utf8");
 
 gulp.task('tuThuocRender', function () {
-  return gulp.src(['src/js/renderBoxThuoc.js'])
+  return gulp.src(['src/js/renderBox1.js'])
     .pipe(replace('%%css%%', cssContent))
     .pipe(replace('%%html%%', htmlContent))
     .pipe(replace('%%js%%', jsContent))
