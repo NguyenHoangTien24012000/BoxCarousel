@@ -12,10 +12,11 @@ body {
 
 .box {
   overflow: hidden;
-  width: 300px;
-  height: 600px;
+  width: 298px;
+  height: 598px;
   background-color: #fff;
   border-radius: 10px;
+  border: 0.5px solid #A5A5A5;
 }
 .box .box__brand {
   display: flex;
@@ -48,10 +49,16 @@ body {
   height: 77px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(207, 239, 235, 0.141667) 41.67%, rgba(0, 0, 0, 0) 100%), #20C8A7;
 }
-.box .box__content .content__image {
+.box .box__content .content__banner {
   width: 280px;
   height: 157px;
   background-color: #e5e5e5;
+  box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
+}
+.box .box__content .content__banner .banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .box .box__carousel {
   margin: 0 10px;
@@ -184,8 +191,8 @@ body {
             <div class="content__border border--left">
 
             </div>
-            <div class="content__image">
-
+            <div class="content__banner">
+                <img class="banner__img" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
             </div>
             <div class="content__border border--right">
 

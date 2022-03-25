@@ -2,17 +2,18 @@
 
 .box {
     overflow: hidden;
-    width: 660px;
-    height: 408px;
+    max-width: 100%;
+    aspect-ratio:16/10;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
+    border: 0.5px solid #A5A5A5;
     .box__brand {
         display: flex;
         justify-content: space-between;
         padding: 8px;
         padding-bottom: 0;
-        margin: 5px 0px;
+        margin-top: 5px;
         .box__brand--left {
             display: flex;
             .brand__logo--left{
@@ -21,7 +22,7 @@
         }
         .brand__text--left {
             margin-left: 7px;
-            margin-top: 3px;
+            margin-top: 11 px;
             .text--content {
                 color: #236c62;
                 line-height: 16.41px;
@@ -41,6 +42,7 @@
             width: 280px;
             height: 157px;
             background-color: #e5e5e5;
+            
         }
     }
    
@@ -49,7 +51,7 @@
         z-index: 20;
         .control {
             // position: absolute;
-            margin-bottom: 15px;
+            margin-bottom: 11px;
             .control__container {
                 display: flex;
                 list-style: none;
@@ -70,7 +72,8 @@
         }
         overflow: hidden;
         margin-left: 10px;
-        padding-left: 4px;
+        // padding-left: 4px;
+        padding: 5px 0px 5px 4px;
         
         .carousel__container {
             transition: all 0.5s;
@@ -93,6 +96,8 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 5px;
+                border: 1px solid #CDCDCD;
             }
         }
         .carousel__item--text {

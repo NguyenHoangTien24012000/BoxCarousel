@@ -4,8 +4,8 @@ function renderBox() {
 	var elem = document.createElement("iframe")
 	Object.assign(elem, {
 		id: 'myIframe',
-		height: 300, // pixels
-		width: 660, // pixels
+		height: 600, // pixels
+		width: 300, // pixels
 		frameBorder : 0
 	})
 	document.getElementById('myDiv').appendChild(elem)

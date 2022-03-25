@@ -12,11 +12,12 @@ body {
 
 .box {
   overflow: hidden;
-  width: 300px;
-  height: 600px;
+  width: 298px;
+  height: 598px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
+  border: 0.5px solid #A5A5A5;
 }
 .box .box__brand {
   display: flex;
@@ -47,12 +48,18 @@ body {
 .box .box__content .content__border {
   width: 10px;
   height: 77px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
 }
-.box .box__content .content__image {
+.box .box__content .content__banner {
   width: 280px;
   height: 157px;
   background-color: #e5e5e5;
+  box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
+}
+.box .box__content .content__banner .banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .box .box__carousel {
   position: absolute;
@@ -98,6 +105,8 @@ body {
   margin: 10px;
 }
 .box .box__carousel .carousel__item--image .item__image {
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -129,13 +138,13 @@ body {
   font-size: 10px;
   border-radius: 10px;
   cursor: pointer;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box .box__note {
   width: 100%;
   height: 77px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
   position: absolute;
   bottom: 0;
 }
@@ -176,8 +185,8 @@ body {
                 <div class="content__border border--left">
 
                 </div>
-                <div class="content__image">
-
+                <div class="content__banner">
+                    <img class="banner__img" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
                 </div>
                 <div class="content__border border--right">
 
@@ -195,7 +204,7 @@ body {
                 <div class="carousel__container">
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
                         </div>
                         <div class="carousel__item--text">
                                  <h5 class="item__title">TPBVSK Kim Não Khang</h5>
@@ -205,7 +214,7 @@ body {
                     </div>
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
                         </div>
                         <div class="carousel__item--text">
                                  <h5 class="item__title">TPBVSK Kim Não Khang</h5>
@@ -215,7 +224,7 @@ body {
                     </div>
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
                         </div>
                         <div class="carousel__item--text">
                                  <h5 class="item__title">TPBVSK Kim Não Khang</h5>

@@ -12,18 +12,19 @@ body {
 
 .box {
   overflow: hidden;
-  width: 660px;
-  height: 408px;
+  width: 658px;
+  height: 406px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
+  border: 0.5px solid #A5A5A5;
 }
 .box .box__brand {
   display: flex;
   justify-content: space-between;
   padding: 8px;
   padding-bottom: 0;
-  margin: 5px 0px;
+  margin-top: 5px;
 }
 .box .box__brand .box__brand--left {
   display: flex;
@@ -33,7 +34,7 @@ body {
 }
 .box .box__brand .brand__text--left {
   margin-left: 7px;
-  margin-top: 3px;
+  margin-top: 11px;
 }
 .box .box__brand .brand__text--left .text--content {
   color: #236c62;
@@ -59,10 +60,10 @@ body {
   z-index: 20;
   overflow: hidden;
   margin-left: 10px;
-  padding-left: 4px;
+  padding: 5px 0px 5px 4px;
 }
 .box .box__carousel .control {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 .box .box__carousel .control .control__container {
   display: flex;
@@ -102,6 +103,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #CDCDCD;
 }
 .box .box__carousel .carousel__item--text {
   margin: 6px 10px;
@@ -286,8 +289,8 @@ body {
 	var elem = document.createElement("iframe")
 	Object.assign(elem, {
 		id: 'myIframe',
-		height: 408, // pixels
-		width: 660, // pixels
+		height: 600, // pixels
+		width: 300, // pixels
 		frameBorder : 0
 	})
 	document.getElementById('myDiv').appendChild(elem)
