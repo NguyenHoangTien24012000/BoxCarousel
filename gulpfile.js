@@ -33,7 +33,7 @@ gulp.task('compress', function () {
 
 //task SASS
 gulp.task('sassTask', function () {
-  return src('src/sass/BoxTuThuoc/styleBox4.scss', { sourcemaps: true })
+  return src('src/sass/BoxTuThuoc/styleBox3.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(dest('dist', { sourcemaps: '.' }));
 });
@@ -45,11 +45,11 @@ gulp.task('sassTaskBox1', function () {
 });
 
 // replace
-const cssContent = fs.readFileSync("src/layout/TuThuoc1/style.css", "utf-8");
+const cssContent = fs.readFileSync("dist/styleBox3.css", "utf-8");
 
-const htmlContent = fs.readFileSync("src/layout/TuThuoc1/layout.html", "utf-8");
+const htmlContent = fs.readFileSync("src/layout/TuThuoc3/layout.html", "utf-8");
 
-const jsContent = fs.readFileSync("src/js/BoxTuThuoc/boxTuThuoc1.js", "utf8");
+const jsContent = fs.readFileSync("src/js/BoxTuThuoc/boxTuThuoc3.js", "utf8");
 
 gulp.task('tuThuocRender', function () {
   return gulp.src(['src/js/renderBox1.js'])

@@ -12,24 +12,46 @@ body {
 
 .box {
   overflow: hidden;
+<<<<<<< HEAD
   width: 300px;
   height: 600px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
+=======
+  width: 658px;
+  height: 406px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  border: 0.5px solid #A5A5A5;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__brand {
   display: flex;
   justify-content: space-between;
   padding: 8px;
   padding-bottom: 0;
+<<<<<<< HEAD
+=======
+  margin-top: 5px;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__brand .box__brand--left {
   display: flex;
 }
+<<<<<<< HEAD
 .box .box__brand .brand__text--left {
   margin-left: 7px;
   margin-top: 3px;
+=======
+.box .box__brand .box__brand--left .brand__logo--left {
+  margin-top: 2px;
+}
+.box .box__brand .brand__text--left {
+  margin-left: 7px;
+  margin-top: 11px;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__brand .brand__text--left .text--content {
   color: #236c62;
@@ -55,16 +77,28 @@ body {
   z-index: 20;
   overflow: hidden;
   margin-left: 10px;
+<<<<<<< HEAD
   padding-left: 4px;
 }
 .box .box__carousel .control {
   margin-bottom: 18px;
+=======
+  padding: 5px 0px 5px 4px;
+}
+.box .box__carousel .control {
+  margin-bottom: 11px;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .control .control__container {
   display: flex;
   list-style: none;
   position: absolute;
+<<<<<<< HEAD
   left: 18%;
+=======
+  left: 16%;
+  bottom: 0;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .control .control__item {
   width: 6px;
@@ -74,7 +108,11 @@ body {
   background-color: #cecece;
 }
 .box .box__carousel .control .control__item.active {
+<<<<<<< HEAD
   background-color: #656565;
+=======
+  background-color: white;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .carousel__container {
   transition: all 0.5s;
@@ -97,6 +135,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+<<<<<<< HEAD
+=======
+  border-radius: 5px;
+  border: 1px solid #CDCDCD;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .carousel__item--text {
   margin: 6px 10px;
@@ -125,22 +168,39 @@ body {
   font-size: 10px;
   border-radius: 10px;
   cursor: pointer;
+<<<<<<< HEAD
   background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+=======
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box .box__note {
   width: 100%;
   height: 77px;
+<<<<<<< HEAD
   background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+=======
+  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.39) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20c8a7;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
   position: absolute;
   bottom: 0;
 }
 .box .box__note .note__content {
   position: absolute;
+<<<<<<< HEAD
   bottom: 16px;
   margin: 0 14px;
 }
 .box .box__note .note__content .note__text {
+=======
+  bottom: 11px;
+  margin: 0 14px;
+  width: 100%;
+}
+.box .box__note .note__content .note__text {
+  text-align: center;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
   font-size: 10px;
   color: #fff;
   font-weight: 700;
@@ -150,12 +210,17 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
+<<<<<<< HEAD
 `;
+=======
+/*# sourceMappingURL=styleBox3.css.map */`;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 	this.html = `<div class="box" id="box__tuThuoc">
     <div class="box__container">
         <div class="box__brand">
             <div class="box__brand--left">
                 <div class="brand__logo--left">
+<<<<<<< HEAD
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                         <path d="M29.1666 8.75002H23.3333V5.83335C23.3333 4.22919 22.0208 2.91669 20.4166 2.91669H14.5833C12.9791 2.91669 11.6666 4.22919 11.6666 5.83335V8.75002H5.83329C4.22913 8.75002 2.91663 10.0625 2.91663 11.6667V29.1667C2.91663 30.7709 4.22913 32.0834 5.83329 32.0834H29.1666C30.7708 32.0834 32.0833 30.7709 32.0833 29.1667V11.6667C32.0833 10.0625 30.7708 8.75002 29.1666 8.75002ZM14.5833 5.83335H20.4166V8.75002H14.5833V5.83335ZM21.875 21.875H18.9583V24.7917C18.9583 25.5938 18.302 26.25 17.5 26.25C16.6979 26.25 16.0416 25.5938 16.0416 24.7917V21.875H13.125C12.3229 21.875 11.6666 21.2188 11.6666 20.4167C11.6666 19.6146 12.3229 18.9584 13.125 18.9584H16.0416V16.0417C16.0416 15.2396 16.6979 14.5834 17.5 14.5834C18.302 14.5834 18.9583 15.2396 18.9583 16.0417V18.9584H21.875C22.677 18.9584 23.3333 19.6146 23.3333 20.4167C23.3333 21.2188 22.677 21.875 21.875 21.875Z" fill="#20C8A8"/>
                         <path d="M29.1666 8.75002H23.3333V5.83335C23.3333 4.22919 22.0208 2.91669 20.4166 2.91669H14.5833C12.9791 2.91669 11.6666 4.22919 11.6666 5.83335V8.75002H5.83329C4.22913 8.75002 2.91663 10.0625 2.91663 11.6667V29.1667C2.91663 30.7709 4.22913 32.0834 5.83329 32.0834H29.1666C30.7708 32.0834 32.0833 30.7709 32.0833 29.1667V11.6667C32.0833 10.0625 30.7708 8.75002 29.1666 8.75002ZM14.5833 5.83335H20.4166V8.75002H14.5833V5.83335ZM21.875 21.875H18.9583V24.7917C18.9583 25.5938 18.302 26.25 17.5 26.25C16.6979 26.25 16.0416 25.5938 16.0416 24.7917V21.875H13.125C12.3229 21.875 11.6666 21.2188 11.6666 20.4167C11.6666 19.6146 12.3229 18.9584 13.125 18.9584H16.0416V16.0417C16.0416 15.2396 16.6979 14.5834 17.5 14.5834C18.302 14.5834 18.9583 15.2396 18.9583 16.0417V18.9584H21.875C22.677 18.9584 23.3333 19.6146 23.3333 20.4167C23.3333 21.2188 22.677 21.875 21.875 21.875Z" fill="url(#paint0_linear_1_75)" fill-opacity="0.2"/>
@@ -166,6 +231,9 @@ body {
                         </linearGradient>
                         </defs>
                         </svg>
+=======
+                    <img src="https://demo.admicro.vn/dtg/images/Vector.png" alt="logo">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                 </div>
                 <div class="brand__text--left">
                     <h5 class="text--content">Tủ thuốc</h5>
@@ -173,6 +241,7 @@ body {
                 </div>
             </div>
             <div class="box__logo--right">
+<<<<<<< HEAD
                 <svg class="logo--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="40" viewBox="0 0 76 40" fill="none">
                     <rect width="76" height="40" fill="url(#pattern0)"/>
                     <defs>
@@ -208,6 +277,17 @@ body {
                 <div class="carousel__item">
                     <div class="carousel__item--image">
                         <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+=======
+                <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+            </div>
+        </div>
+        <div class="box__carousel">
+          
+            <div class="carousel__container">
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                     </div>
                     <div class="carousel__item--text">
                              <h5 class="item__title">TPBVSK Kim Não Khang</h5>
@@ -217,7 +297,11 @@ body {
                 </div>
                 <div class="carousel__item">
                     <div class="carousel__item--image">
+<<<<<<< HEAD
                         <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+=======
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                     </div>
                     <div class="carousel__item--text">
                              <h5 class="item__title">TPBVSK Kim Não Khang</h5>
@@ -227,7 +311,11 @@ body {
                 </div>
                 <div class="carousel__item">
                     <div class="carousel__item--image">
+<<<<<<< HEAD
                         <img class="item__image" src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg" alt="">
+=======
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                     </div>
                     <div class="carousel__item--text">
                              <h5 class="item__title">TPBVSK Kim Não Khang</h5>
@@ -235,6 +323,76 @@ body {
                     </div>
                     <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
                 </div>
+<<<<<<< HEAD
+=======
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+            </div>
+            <div class="control">
+                <ul class="control__container">
+                    <!-- <li class="control__item active arrow right"></li>
+                    <li class="control__item arrow left"></li>
+                    <li class="control__item"></li> -->
+                </ul>
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
             </div>
         </div>
         <div class="box__note">
@@ -249,17 +407,30 @@ body {
 		id: 'myIframe',
 		height: 600, // pixels
 		width: 300, // pixels
+<<<<<<< HEAD
 		frameBorder: 0
 	})
 	document.querySelector('#myDiv').appendChild(elem)
 	let iframe = document.getElementById("myIframe");
 	let doc = iframe.contentWindow;
 	// doc.querySelector('body').wr = `<style>${this.css}</style>${this.html}`;
+=======
+		frameBorder : 0
+	})
+	document.getElementById('myDiv').appendChild(elem)
+	let iframe = document.getElementById("myIframe");
+	let doc = iframe.contentWindow
+	// doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 	doc.document.write(`<style>${this.css}</style>${this.html}
     <script>
     const carouselBox = function (selector) {
 
+<<<<<<< HEAD
     let slider = document.querySelector('#'+selector);
+=======
+    let slider = document.getElementById(selector);
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -267,10 +438,18 @@ body {
     let cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
 
     //So luong the con
+<<<<<<< HEAD
     let numberItem = slider.querySelectorAll('.carousel__item').length;
 
     function createNodeChildLi() {
         for (let i = 0; i < numberItem; i++) {
+=======
+    // let numberItem = slider.querySelectorAll('.carousel__item').length;
+    let current = 0;
+
+    function createNodeChildLi() {
+        for (let i = 0; i < 3; i++) {
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
             var li = document.createElement("li");
             li.classList.add("control__item")
             li.setAttribute("index", i)
@@ -289,6 +468,7 @@ body {
     function carouselAction() {
         slider.querySelectorAll('.control__item').forEach((item, index) => {
             item.addEventListener('click', () => {
+<<<<<<< HEAD
                 activeElenment()
                 item.classList.add('active')
                 if (index === numberItem - 1) {
@@ -300,12 +480,46 @@ body {
             });
         });
     }
+=======
+                current = index
+                activeElenment()
+                item.classList.add('active')
+                carousel.style.transform = 'translateX(-'+cardWidth * index * 3 + 'px )';
+
+
+            });
+        });
+    }
+    function carouselAuto() {
+        activeElenment()
+        slider.querySelectorAll('.control__item').forEach((item,index) =>{
+            if(index === current){
+                item.classList.add('active')
+            }
+        })
+        if (current === 2) {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current = 0;
+        } else {
+            carousel.style.transform = 'translateX(-' + (cardWidth * current * 3) + 'px )';
+            current += 1;
+        }
+    }
+    setInterval(carouselAuto, 3000)
+
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
     return createNodeChildLi(), carouselAction();
 }
 
 carouselBox('box__tuThuoc');
+<<<<<<< HEAD
 
     <\/script>
     `);
+=======
+    <\/script>
+    `);
+    doc.document.close();
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 renderBox()

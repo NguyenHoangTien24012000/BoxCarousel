@@ -14,8 +14,8 @@ body {
 
 .box {
   overflow: hidden;
-  width: 300px;
-  height: 600px;
+  width: 660px;
+  height: 408px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -24,9 +24,13 @@ body {
   justify-content: space-between;
   padding: 8px;
   padding-bottom: 0;
+  margin: 5px 0px;
 }
 .box .box__brand .box__brand--left {
   display: flex;
+}
+.box .box__brand .box__brand--left .brand__logo--left {
+  margin-top: 2px;
 }
 .box .box__brand .brand__text--left {
   margin-left: 7px;
@@ -83,6 +87,13 @@ body {
 .box .box__carousel .control__button {
   margin-left: 9px;
   display: flex;
+<<<<<<< HEAD
+=======
+  list-style: none;
+  position: absolute;
+  left: 16%;
+  bottom: 0;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .button__item {
   cursor: pointer;
@@ -93,8 +104,13 @@ body {
   text-align: center;
   background-color: #20c8a866;
 }
+<<<<<<< HEAD
 .box .box__carousel .button__item.active {
   background-color: #20c8a8;
+=======
+.box .box__carousel .control .control__item.active {
+  background-color: white;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__carousel .carousel__container {
   position: absolute;
@@ -148,9 +164,17 @@ body {
   height: 40px;
 }
 .box .box__note .note__content {
+<<<<<<< HEAD
   margin: 10px 14px;
+=======
+  position: absolute;
+  bottom: 16px;
+  margin: 0 14px;
+  width: 100%;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 .box .box__note .note__content .note__text {
+  text-align: center;
   font-size: 10px;
   color: #A5A5A5;
   font-weight: 700;
@@ -160,12 +184,17 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=styleBox2.css.map */`;
+=======
+/*# sourceMappingURL=styleBox3.css.map */`;
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 	this.html=`<div class="box" id="box__tuThuoc">
     <div class="box__container">
         <div class="box__brand">
             <div class="box__brand--left">
                 <div class="brand__logo--left">
+<<<<<<< HEAD
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                         <path
                             d="M29.1666 8.75002H23.3333V5.83335C23.3333 4.22919 22.0208 2.91669 20.4166 2.91669H14.5833C12.9791 2.91669 11.6666 4.22919 11.6666 5.83335V8.75002H5.83329C4.22913 8.75002 2.91663 10.0625 2.91663 11.6667V29.1667C2.91663 30.7709 4.22913 32.0834 5.83329 32.0834H29.1666C30.7708 32.0834 32.0833 30.7709 32.0833 29.1667V11.6667C32.0833 10.0625 30.7708 8.75002 29.1666 8.75002ZM14.5833 5.83335H20.4166V8.75002H14.5833V5.83335ZM21.875 21.875H18.9583V24.7917C18.9583 25.5938 18.302 26.25 17.5 26.25C16.6979 26.25 16.0416 25.5938 16.0416 24.7917V21.875H13.125C12.3229 21.875 11.6666 21.2188 11.6666 20.4167C11.6666 19.6146 12.3229 18.9584 13.125 18.9584H16.0416V16.0417C16.0416 15.2396 16.6979 14.5834 17.5 14.5834C18.302 14.5834 18.9583 15.2396 18.9583 16.0417V18.9584H21.875C22.677 18.9584 23.3333 19.6146 23.3333 20.4167C23.3333 21.2188 22.677 21.875 21.875 21.875Z"
@@ -181,6 +210,9 @@ body {
                             </linearGradient>
                         </defs>
                     </svg>
+=======
+                    <img src="https://demo.admicro.vn/dtg/images/Vector.png" alt="logo">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                 </div>
                 <div class="brand__text--left">
                     <h5 class="text--content">Tủ thuốc</h5>
@@ -188,6 +220,7 @@ body {
                 </div>
             </div>
             <div class="box__logo--right">
+<<<<<<< HEAD
                 <svg class="logo--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="76" height="40" viewBox="0 0 76 40" fill="none">
                     <rect width="76" height="40" fill="url(#pattern0)" />
@@ -291,6 +324,143 @@ body {
                                             fill="#007880" />
                                     </svg></button></div>
                         </div>
+=======
+                <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+            </div>
+        </div>
+        <div class="box__carousel">
+          
+            <div class="carousel__container">
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
+                    </div>
+                    <div class="line__container">
+                        <hr class="line__item">
+                    </div>
+                </div>
+                <div class="carousel__item">
+<<<<<<< HEAD
+                    <div class="item__container">
+                        <div class="item__left">
+                            <div class="carousel__item--image">
+                                <img class="item__image"
+                                    src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="item__right">
+                            <div class="carousel__item--text">
+                                <h5 class="item__title">Thuốc bổ não Cebraton</h5>
+                                <p class="item__detail">Tăng cường chức năng hệ thần kinh trung ương, làm tăng hoạt
+                                    hoá</p>
+                            </div>
+                            <div class="carousel__item--button"><button class="btn__item"><a class="btn__text"
+                                        src="">Xem thêm </a><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                        height="9" viewBox="0 0 11 9" fill="none">
+                                        <path
+                                            d="M10.3536 4.68705C10.5488 4.49179 10.5488 4.1752 10.3536 3.97994L7.17157 0.797962C6.97631 0.6027 6.65973 0.6027 6.46447 0.797962C6.2692 0.993224 6.2692 1.30981 6.46447 1.50507L9.29289 4.3335L6.46447 7.16192C6.2692 7.35719 6.2692 7.67377 6.46447 7.86903C6.65973 8.06429 6.97631 8.06429 7.17157 7.86903L10.3536 4.68705ZM0 4.8335H10V3.8335H0V4.8335Z"
+                                            fill="#007880" />
+                                    </svg></button></div>
+                        </div>
+=======
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
+                    </div>
+                    <div class="line__container">
+                        <hr class="line__item">
+                    </div>
+                </div>
+                <div class="carousel__item">
+<<<<<<< HEAD
+                    <div class="item__container">
+                        <div class="item__left">
+                            <div class="carousel__item--image">
+                                <img class="item__image"
+                                    src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="item__right">
+                            <div class="carousel__item--text">
+                                <h5 class="item__title">Thuốc bổ não Cebraton</h5>
+                                <p class="item__detail">Tăng cường chức năng hệ thần kinh trung ương, làm tăng hoạt
+                                    hoá</p>
+                            </div>
+                            <div class="carousel__item--button"><button class="btn__item"><a class="btn__text"
+                                        src="">Xem thêm </a><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                        height="9" viewBox="0 0 11 9" fill="none">
+                                        <path
+                                            d="M10.3536 4.68705C10.5488 4.49179 10.5488 4.1752 10.3536 3.97994L7.17157 0.797962C6.97631 0.6027 6.65973 0.6027 6.46447 0.797962C6.2692 0.993224 6.2692 1.30981 6.46447 1.50507L9.29289 4.3335L6.46447 7.16192C6.2692 7.35719 6.2692 7.67377 6.46447 7.86903C6.65973 8.06429 6.97631 8.06429 7.17157 7.86903L10.3536 4.68705ZM0 4.8335H10V3.8335H0V4.8335Z"
+                                            fill="#007880" />
+                                    </svg></button></div>
+                        </div>
+=======
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                    </div>
+                    <div class="carousel__item--text">
+                             <h5 class="item__title">TPBVSK Kim Não Khang</h5>
+                        <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                    </div>
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item--image">
+                        <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
                     </div>
                     <div class="line__container">
                         <hr class="line__item">
@@ -436,62 +606,13 @@ body {
                         <hr class="line__item">
                     </div>
                 </div>
-                <div class="carousel__item">
-                    <div class="item__container">
-                        <div class="item__left">
-                            <div class="carousel__item--image">
-                                <img class="item__image"
-                                    src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="item__right">
-                            <div class="carousel__item--text">
-                                <h5 class="item__title">Thuốc bổ não Cebraton</h5>
-                                <p class="item__detail">Tăng cường chức năng hệ thần kinh trung ương, làm tăng hoạt
-                                    hoá</p>
-                            </div>
-                            <div class="carousel__item--button"><button class="btn__item"><a class="btn__text"
-                                        src="">Xem thêm </a><svg xmlns="http://www.w3.org/2000/svg" width="11"
-                                        height="9" viewBox="0 0 11 9" fill="none">
-                                        <path
-                                            d="M10.3536 4.68705C10.5488 4.49179 10.5488 4.1752 10.3536 3.97994L7.17157 0.797962C6.97631 0.6027 6.65973 0.6027 6.46447 0.797962C6.2692 0.993224 6.2692 1.30981 6.46447 1.50507L9.29289 4.3335L6.46447 7.16192C6.2692 7.35719 6.2692 7.67377 6.46447 7.86903C6.65973 8.06429 6.97631 8.06429 7.17157 7.86903L10.3536 4.68705ZM0 4.8335H10V3.8335H0V4.8335Z"
-                                            fill="#007880" />
-                                    </svg></button></div>
-                        </div>
-                    </div>
-                    <div class="line__container">
-                        <hr class="line__item">
-                    </div>
-                </div>
-                <div class="carousel__item">
-                    <div class="item__container">
-                        <div class="item__left">
-                            <div class="carousel__item--image">
-                                <img class="item__image"
-                                    src="https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="item__right">
-                            <div class="carousel__item--text">
-                                <h5 class="item__title">Thuốc bổ não Cebraton</h5>
-                                <p class="item__detail">Tăng cường chức năng hệ thần kinh trung ương, làm tăng hoạt
-                                    hoá</p>
-                            </div>
-                            <div class="carousel__item--button"><button class="btn__item"><a class="btn__text"
-                                        src="">Xem thêm </a><svg xmlns="http://www.w3.org/2000/svg" width="11"
-                                        height="9" viewBox="0 0 11 9" fill="none">
-                                        <path
-                                            d="M10.3536 4.68705C10.5488 4.49179 10.5488 4.1752 10.3536 3.97994L7.17157 0.797962C6.97631 0.6027 6.65973 0.6027 6.46447 0.797962C6.2692 0.993224 6.2692 1.30981 6.46447 1.50507L9.29289 4.3335L6.46447 7.16192C6.2692 7.35719 6.2692 7.67377 6.46447 7.86903C6.65973 8.06429 6.97631 8.06429 7.17157 7.86903L10.3536 4.68705ZM0 4.8335H10V3.8335H0V4.8335Z"
-                                            fill="#007880" />
-                                    </svg></button></div>
-                        </div>
-                    </div>
-                    <div class="line__container">
-                        <hr class="line__item">
-                    </div>
-                </div>
+            </div>
+            <div class="control">
+                <ul class="control__container">
+                    <!-- <li class="control__item active arrow right"></li>
+                    <li class="control__item arrow left"></li>
+                    <li class="control__item"></li> -->
+                </ul>
             </div>
         </div>
         <div class="box__note">
@@ -509,7 +630,7 @@ body {
     
 const carouselBox = function (selector) {
 
-    let slider = document.querySelector('#'+selector);
+    let slider = document.getElementById('selector');
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -517,6 +638,7 @@ const carouselBox = function (selector) {
     let cardHeight = slider.querySelector('.box__carousel').offsetHeight - 14;
 
     //So luong the con
+<<<<<<< HEAD
   
 
     let buttonDown = slider.querySelector(".button__item.down");
@@ -526,6 +648,19 @@ const carouselBox = function (selector) {
     let textSlider = slider.querySelector(".control__text .text--left")
     console.log(textSlider)
     buttonDown.classList.add("active")
+=======
+    // let numberItem = slider.querySelectorAll('.carousel__item').length;
+
+    function createNodeChildLi() {
+        for (let i = 0; i < 3; i++) {
+            var li = document.createElement("li");
+            li.classList.add("control__item")
+            li.setAttribute("index", i)
+            slider.querySelector('.control .control__container').appendChild(li);
+        }
+        slider.querySelectorAll('.control li')[0].classList.add('active');
+    }
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 
     current = 0;
 
@@ -559,10 +694,25 @@ const carouselBox = function (selector) {
         }
     })
 
+<<<<<<< HEAD
+=======
+    function carouselAction() {
+        slider.querySelectorAll('.control__item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                activeElenment()
+                item.classList.add('active')
+
+                carousel.style.transform = 'translateX(-'+cardWidth * index * 3 + 'px )';
+
+
+            });
+        });
+    }
+    return createNodeChildLi(), carouselAction();
+>>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 }
 
 carouselBox('box__tuThuoc');
-
     <\/script>
     `);
     io.document.close();
