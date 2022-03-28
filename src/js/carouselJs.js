@@ -1,6 +1,6 @@
 const $ = function (selector) {
 
-    let slider = document.querySelector(`.${selector}`);
+    let slider = document.getElementById(`${selector}`);
 
     let track = slider.querySelector('.track');
 
@@ -8,7 +8,7 @@ const $ = function (selector) {
     let cardWidth = slider.querySelector('.card-container').offsetWidth + 10;
     //So luong the con
     let numberItem = slider.querySelectorAll('.track .card-container').length;
-    
+
     let overlayLeft = slider.querySelector('.controls-overplay-left');
 
     let current = 0;
@@ -33,7 +33,7 @@ const $ = function (selector) {
     }
     function prev() {
         slider.querySelector('.arrow.left').addEventListener('click', () => {
-            if(current == 1){
+            if (current == 1) {
                 overlayLeft.style.display = "none"
             }
             if (current !== 0) {
@@ -46,7 +46,21 @@ const $ = function (selector) {
         })
     }
 
-
+    function carouselAuto() {
+        if (current === numberItem - 3) {
+            current = 0;
+            overlayLeft.style.display = "none"
+            track.style.transform = `translateX(0px)`;
+        } else if (current === numberItem - 4) {
+            current += 1;
+            track.style.transform = `translateX(-${cardWidth * current - cardWidth / 2}px )`;
+        } else {
+            current += 1;
+            overlayLeft.style.display = "block"
+            track.style.transform = `translateX(-${cardWidth * current}px)`;
+        }
+    }
+    setInterval(carouselAuto, 3000)
     return next(), prev();
 }
 

@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   width: 298px;
   height: 598px;
-  background-color: #fff;
+  background-color: #FEFEFE;
   border-radius: 10px;
   border: 0.5px solid #A5A5A5;
 }
@@ -36,6 +36,7 @@ body {
   margin-top: 3px;
 }
 .box .box__brand .brand__text--left .text--content {
+  font-size: 14px;
   color: #236c62;
   line-height: 16.41px;
 }
@@ -98,11 +99,16 @@ body {
   margin-right: 5px;
   width: 16px;
   height: 10px;
-  padding-top: 6px;
+  padding-top: 5px;
+  padding-bottom:1px;
   line-height: 16px;
   text-align: center;
   background-color: #20c8a866;
 }
+.box .box__carousel .button__item.up{
+    padding-top: 4px;
+    padding-bottom: 2px;
+  }
 .box .box__carousel .button__item.active {
   background-color: #20c8a8;
 }
@@ -158,7 +164,7 @@ body {
   height: 40px;
 }
 .box .box__note .note__content {
-  margin: 10px 14px;
+  margin: 6px 14px;
 }
 .box .box__note .note__content .note__text {
   font-size: 10px;
@@ -500,12 +506,10 @@ body {
 	// doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
 	doc.document.write(`<style>${this.css}</style>${this.html}
     <script>
-    {
-
-
+    
 const carouselBox = function (selector) {
 
-    let slider = document.getElementById(selector);
+    let slider = document.querySelector('#'+selector);
 
     let carousel = slider.querySelector('.carousel__container');
 
@@ -555,12 +559,10 @@ const carouselBox = function (selector) {
         }
     })
 
-
-    return
 }
 
 carouselBox('box__tuThuoc');
-}
+
     <\/script>
     `);
     doc.document.close();

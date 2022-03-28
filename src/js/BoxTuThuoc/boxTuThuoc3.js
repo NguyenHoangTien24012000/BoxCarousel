@@ -4,11 +4,11 @@ const carouselBox = function (selector) {
 
     let carousel = slider.querySelector('.carousel__container');
 
-    //Kich thuoc the con + 10px margin
     let cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
+    window.onresize = function(){
+        cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
+    }
 
-    //So luong the con
-    // let numberItem = slider.querySelectorAll('.carousel__item').length;
     let current = 0;
 
     function createNodeChildLi() {
@@ -20,7 +20,6 @@ const carouselBox = function (selector) {
         }
         slider.querySelectorAll('.control li')[0].classList.add('active');
     }
-
 
     function activeElenment() {
         slider.querySelectorAll('.control__item').forEach((item) => {

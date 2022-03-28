@@ -1,25 +1,25 @@
 function buildBoxThuoc(data) {
     let cssBanner, htmlBanner;
-    if (data.bannerType === 1) {
+    if (data.type === 1) {
         htmlBanner = `<img class="banner__img" src="${data.url}" alt="alo">`
     } else {
         htmlBanner = ''
     }
     function renderSanPham(arrSanPham) {
-        let html = ''
+        let content = ''
         arrSanPham.forEach(item => {
-            html += `<div class="carousel__item">
+            content += `<div class="carousel__item">
             <div class="carousel__item--image">
                 <img class="item__image" src="${item.img}" alt="${item.title}">
             </div>
             <div class="carousel__item--text">
                      <h5 class="item__title">${item.title}</h5>
-                <p class="item__detail">${item.desc}</p>
+                <p class="item__detail">${item.desc.length > 100 ? item.desc.slice(0, 66) + '...' : item.desc}</p>
             </div>
             <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="${item.url_btn}">TÌM HIỂU NGAY</a></button></div>
         </div>`
         });
-        return html;
+        return content;
     }
 
     let html = `<div id="box__tuThuoc">
@@ -84,7 +84,7 @@ function buildBoxThuoc(data) {
       overflow: hidden;
       width: 298px;
       height: 598px;
-      background-color: #fff;
+      background-color: #F9F9F9;
       border-radius: 10px;
       position: relative;
       border: 0.5px solid #A5A5A5;
@@ -107,7 +107,8 @@ function buildBoxThuoc(data) {
       margin-top: 3px;
     }
     .box .box__brand .brand__text--left .text--content {
-        color: ${data.color_text_brand};
+      font-size: 14px;
+      color: #236c62;
       line-height: 16.41px;
     }
     .box .box__content {
@@ -118,7 +119,7 @@ function buildBoxThuoc(data) {
     .box .box__content .content__border {
       width: 10px;
       height: 77px;
-      background:   ${data.color_bg};
+      background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
     }
     .box .box__content .content__banner {
       width: 280px;
@@ -168,6 +169,7 @@ function buildBoxThuoc(data) {
       margin-right: 10px;
       border-radius: 5px;
       box-shadow: 0px 0px 7px rgba(136, 136, 136, 0.25);
+      position: relative;
     }
     .box .box__carousel .carousel__item--image {
       width: 181px;
@@ -175,6 +177,7 @@ function buildBoxThuoc(data) {
       margin: 10px;
     }
     .box .box__carousel .carousel__item--image .item__image {
+      border: 1px solid #CDCDCD;
       border-radius: 5px;
       width: 100%;
       height: 100%;
@@ -196,7 +199,10 @@ function buildBoxThuoc(data) {
       color: #555555;
     }
     .box .box__carousel .carousel__item--button {
-      text-align: center;
+      position: absolute;
+      bottom: 11px;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .box .box__carousel .carousel__item--button .btn__item {
       border: none;
@@ -207,23 +213,24 @@ function buildBoxThuoc(data) {
       font-size: 10px;
       border-radius: 10px;
       cursor: pointer;
-      background: ${data.color_bg};
+      background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .box .box__note {
       width: 100%;
       height: 77px;
-      background: ${data.color_bg};
+      background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
     }
     .box .box__note .note__content {
-        margin: 0 14px;
-        position: absolute;
-        bottom: 10px;
+      position: absolute;
+      bottom: 12px;
+      margin: 0 14px;
     }
     .box .box__note .note__content .note__text {
       font-size: 10px;
-      color: ${data.color_text_footer};
+      color: #fff;
       font-weight: 700;
       font-style: italic;
     }
@@ -231,7 +238,7 @@ function buildBoxThuoc(data) {
       font-weight: 300;
       opacity: 0.9;
     }`
-
+    
     let script =`const carouselBox = function (selector) {
 
         let slider = document.querySelector('#' + selector);
@@ -320,9 +327,9 @@ let data = {
     logo: 'https://demo.admicro.vn/dtg/images/image%2016.png',
     color_text_brand: '#236c62',
     color_bg: 'radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;',
-    url: '',
+    url: 'https://demo.admicro.vn/dtg/images/image%205-3.png',
     type: 1,
-    arr_sp: [{ img: 'https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg', title: 'name', desc: 'detail', url_btn: 'linkButton' },
+    arr_sp: [{ img: 'https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg', title: 'name', desc: 'Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên', url_btn: 'linkButton' },
     { img: 'https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg', title: 'name', desc: 'detail', url_btn: 'linkButton' },
     { img: 'https://media3.scdn.vn/img4/2020/10_10/brTXpA7d6ydEDCJTsJ8K_simg_b5529c_250x250_maxb.jpg', title: 'name', desc: 'detail', url_btn: 'linkButton' }
     ],

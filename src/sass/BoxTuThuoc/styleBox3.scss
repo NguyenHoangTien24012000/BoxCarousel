@@ -4,7 +4,7 @@
     overflow: hidden;
     max-width: 100%;
     aspect-ratio:16/10;
-    background-color: #fff;
+    background-color: #F9F9F9;
     border-radius: 10px;
     position: relative;
     border: 0.5px solid #A5A5A5;
@@ -24,6 +24,7 @@
             margin-left: 7px;
             margin-top: 11 px;
             .text--content {
+                font-size: 14px;
                 margin-top: 12px;
                 color: #236c62;
                 line-height: 16.41px;

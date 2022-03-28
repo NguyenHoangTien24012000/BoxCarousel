@@ -12,8 +12,8 @@ body {
 
 .box {
   overflow: hidden;
-  width: 658px;
-  height: 406px;
+  max-width: 100%;
+  aspect-ratio: 16/10;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -22,9 +22,9 @@ body {
 .box .box__brand {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 0 15px;
   padding-bottom: 0;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .box .box__brand .box__brand--left {
   display: flex;
@@ -34,30 +34,18 @@ body {
 }
 .box .box__brand .brand__text--left {
   margin-left: 7px;
-  margin-top: 11px;
+  margin-top: 11 px;
 }
 .box .box__brand .brand__text--left .text--content {
+  font-size: 14px;
+  margin-top: 12px;
   color: #236c62;
   line-height: 16.41px;
-}
-.box .box__content {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.box .box__content .content__border {
-  width: 10px;
-  height: 77px;
-  background-color: #18796880;
-}
-.box .box__content .content__image {
-  width: 280px;
-  height: 157px;
-  background-color: #e5e5e5;
 }
 .box .box__carousel {
   position: absolute;
   z-index: 20;
+  top: 50px;
   overflow: hidden;
   margin-left: 10px;
   padding: 5px 0px 5px 4px;
@@ -69,7 +57,8 @@ body {
   display: flex;
   list-style: none;
   position: absolute;
-  left: 16%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
 }
 .box .box__carousel .control .control__item {
@@ -84,51 +73,58 @@ body {
 }
 .box .box__carousel .carousel__container {
   transition: all 0.5s;
+  width: 300%;
   display: flex;
 }
 .box .box__carousel .carousel__item {
-  width: 200px;
-  height: 300px;
+  position: relative;
+  width: 10.2%;
+  aspect-ratio: 2/3;
   background-color: white;
   margin-right: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 7px rgba(136, 136, 136, 0.25);
 }
 .box .box__carousel .carousel__item--image {
-  width: 181px;
-  height: 181px;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+  width: 100%;
 }
 .box .box__carousel .carousel__item--image .item__image {
-  width: 100%;
-  height: 100%;
+  width: 88%;
   object-fit: cover;
   border-radius: 5px;
   border: 1px solid #CDCDCD;
 }
 .box .box__carousel .carousel__item--text {
-  margin: 6px 10px;
+  margin: 0 4%;
 }
 .box .box__carousel .carousel__item--text .item__title {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 4px;
+  padding-bottom: 1%;
   color: #333333;
 }
 .box .box__carousel .carousel__item--text .item__detail {
   font-size: 11px;
   font-weight: 400;
   color: #555555;
+  margin-bottom: 5px;
 }
 .box .box__carousel .carousel__item--button {
-  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .box .box__carousel .carousel__item--button .btn__item {
   border: none;
   color: white;
   font-weight: 700;
   padding: 5px 12px;
+  white-space: nowrap;
   text-align: center;
   font-size: 10px;
   border-radius: 10px;
@@ -160,6 +156,22 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
+
+@media only screen and (max-width: 600px) {
+  .box .box__carousel .carousel__item {
+    width: 10.2%;
+  }
+  .box .box__carousel .carousel__item .carousel__item--text .item__title {
+    font-size: 12px;
+  }
+  .box .box__carousel .carousel__item .carousel__item--text .item__detail {
+    font-size: 10px;
+  }
+  .box .box__carousel .carousel__item .carousel__item--button .btn__item {
+    padding: 4px 10px;
+    font-size: 9px;
+  }
+}
 /*# sourceMappingURL=styleBox3.css.map */`;
 	this.html = `<div class="box" id="box__tuThuoc">
     <div class="box__container">
@@ -169,8 +181,7 @@ body {
                     <img src="https://demo.admicro.vn/dtg/images/Vector.png" alt="logo">
                 </div>
                 <div class="brand__text--left">
-                    <h5 class="text--content">Tủ thuốc</h5>
-                    <h5 class="text--content">gia đình</h5>
+                    <h5 class="text--content">Tủ thuốc gia đình</h5>
                 </div>
             </div>
             <div class="box__logo--right">
@@ -273,9 +284,6 @@ body {
             </div>
             <div class="control">
                 <ul class="control__container">
-                    <!-- <li class="control__item active arrow right"></li>
-                    <li class="control__item arrow left"></li>
-                    <li class="control__item"></li> -->
                 </ul>
             </div>
         </div>
@@ -289,8 +297,8 @@ body {
 	var elem = document.createElement("iframe")
 	Object.assign(elem, {
 		id: 'myIframe',
-		height: 600, // pixels
-		width: 300, // pixels
+		height: 408, // pixels
+		width: 580, // pixels
 		frameBorder : 0
 	})
 	document.getElementById('myDiv').appendChild(elem)
@@ -305,11 +313,11 @@ body {
 
     let carousel = slider.querySelector('.carousel__container');
 
-    //Kich thuoc the con + 10px margin
     let cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
+    window.onresize = function(){
+        cardWidth = slider.querySelector('.carousel__item').offsetWidth + 10;
+    }
 
-    //So luong the con
-    // let numberItem = slider.querySelectorAll('.carousel__item').length;
     let current = 0;
 
     function createNodeChildLi() {
@@ -321,7 +329,6 @@ body {
         }
         slider.querySelectorAll('.control li')[0].classList.add('active');
     }
-
 
     function activeElenment() {
         slider.querySelectorAll('.control__item').forEach((item) => {

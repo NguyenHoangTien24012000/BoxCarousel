@@ -12,26 +12,29 @@ body {
 
 .box {
   overflow: hidden;
-  width: 660px;
-  height: 300px;
-  background-color: #fff;
+  width: 658px;
+  height: 298px;
+  background-color: #F9F9F9;
   border-radius: 10px;
   position: relative;
+  border: 0.5px solid #A5A5A5;
 }
 .box .box__brand {
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  padding-bottom: 0;
+  padding-bottom: 16px;
 }
 .box .box__brand .box__brand--left {
   display: flex;
+  margin-left: 10px;
 }
 .box .box__brand .brand__text--left {
   margin-left: 7px;
-  margin-top: 3px;
+  margin-top: 11px;
 }
 .box .box__brand .brand__text--left .text--content {
+  font-size: 18px;
   color: #236c62;
   line-height: 16.41px;
 }
@@ -39,8 +42,8 @@ body {
   width: 120px;
   height: 26px;
   border-radius: 10px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
   text-align: center;
+  background-image: url("https://demo.admicro.vn/buildboxtuthuoc/images/Rectangle%207.png");
 }
 .box .box__brand .box__logo--right .logo--text {
   line-height: 25px;
@@ -52,10 +55,14 @@ body {
   align-items: flex-end;
 }
 .box .box__content .content__border {
-  width: 18px;
+  width: 17px;
   height: 133px;
   margin-bottom: 26px;
   background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+}
+.box .box__content .content__border.active {
+  position: absolute;
+  right: 0;
 }
 .box .box__content .content__image {
   margin-bottom: 25px;
@@ -64,9 +71,15 @@ body {
   background-color: #e5e5e5;
   box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
 }
+.box .content__carousel {
+  position: absolute;
+  top: 52px;
+  right: 19px;
+  box-shadow: 0px 0px 7px rgba(136, 136, 136, 0.25);
+  border-radius: 10px;
+}
 .box .box__carousel {
-  width: 302px;
-  height: 207px;
+  width: 300px;
   position: relative;
 }
 .box .box__carousel .control {
@@ -95,7 +108,6 @@ body {
   transition: all 0.5s;
 }
 .box .box__carousel .carousel__container {
-  padding: 1px;
   overflow: hidden;
 }
 .box .box__carousel .carousel__item {
@@ -104,7 +116,6 @@ body {
   height: 205px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 7px rgba(136, 136, 136, 0.25);
 }
 .box .box__carousel .carousel__item--image {
   width: 123px;
@@ -173,8 +184,7 @@ body {
                     <img src="https://demo.admicro.vn/dtg/images/Vector.png" alt="logo">
                 </div>
                 <div class="brand__text--left">
-                    <h5 class="text--content">Tủ thuốc</h5>
-                    <h5 class="text--content">gia đình</h5>
+                    <h5 class="text--content">Tủ thuốc gia đình</h5>
                 </div>
             </div>
             <div class="box__logo--right">
@@ -188,74 +198,76 @@ body {
 
             </div>
             <div class="content__image">
-
+                
             </div>
             <div class="content__border">
 
             </div>
-            <div class="box__carousel">
+            <div class="content__carousel">
+                <div class="box__carousel">
              
-                <div class="carousel__container">
-                    <div class="carousel__content">
-                        <div class="carousel__item">
-                            <div class="carousel__item--image">
-                                <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
-                                <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
+                    <div class="carousel__container">
+                        <div class="carousel__content">
+                            <div class="carousel__item">
+                                <div class="carousel__item--image">
+                                    <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                                    <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
+                                </div>
+                                <div class="carousel__item--text">
+                                   <div class="text__logo">
+                                    <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+                                   </div>
+                                   <div class="text__detail">
+                                        <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
+                                        <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
+                                        <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
+                                   </div>
+                                </div>
                             </div>
-                            <div class="carousel__item--text">
-                               <div class="text__logo">
-                                <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
-                               </div>
-                               <div class="text__detail">
-                                    <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
-                                    <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
-                                    <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
-                               </div>
+                            <div class="carousel__item">
+                                <div class="carousel__item--image">
+                                    <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                                    <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
+                                </div>
+                                <div class="carousel__item--text">
+                                   <div class="text__logo">
+                                    <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+                                   </div>
+                                   <div class="text__detail">
+                                        <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
+                                        <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
+                                        <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
+                                   </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div class="carousel__item--image">
-                                <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
-                                <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
-                            </div>
-                            <div class="carousel__item--text">
-                               <div class="text__logo">
-                                <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
-                               </div>
-                               <div class="text__detail">
-                                    <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
-                                    <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
-                                    <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div class="carousel__item--image">
-                                <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
-                                <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
-                            </div>
-                            <div class="carousel__item--text">
-                               <div class="text__logo">
-                                <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
-                               </div>
-                               <div class="text__detail">
-                                    <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
-                                    <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
-                                    <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
-                               </div>
+                            <div class="carousel__item">
+                                <div class="carousel__item--image">
+                                    <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                                    <h5 class="item--description">Thuốc Bổ Não Cebraton</h5>
+                                </div>
+                                <div class="carousel__item--text">
+                                   <div class="text__logo">
+                                    <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+                                   </div>
+                                   <div class="text__detail">
+                                        <p class="text__style">Không còn đau đầu, chóng mặt, mất ngủ</p>
+                                        <p class="text__style">Vượt qua căng thẳng, stress mùa dịch</p>
+                                        <p class="text__style">Phòng ngừa tai biến mạch máu não</p>
+                                   </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="control">
-                    <ul class="control__container">
-                        <!-- <li class="control__item active arrow right"></li>
-                        <li class="control__item arrow left"></li>
-                        <li class="control__item"></li> -->
-                    </ul>
+                    <div class="control">
+                        <ul class="control__container">
+                            <!-- <li class="control__item active arrow right"></li>
+                            <li class="control__item arrow left"></li>
+                            <li class="control__item"></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="content__border">
+            <div class="content__border active">
 
             </div>
         </div>

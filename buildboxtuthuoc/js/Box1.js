@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   width: 298px;
   height: 598px;
-  background-color: #fff;
+  background-color: #F9F9F9;
   border-radius: 10px;
   position: relative;
   border: 0.5px solid #A5A5A5;
@@ -37,6 +37,7 @@ body {
   margin-top: 3px;
 }
 .box .box__brand .brand__text--left .text--content {
+  font-size: 14px;
   color: #236c62;
   line-height: 16.41px;
 }

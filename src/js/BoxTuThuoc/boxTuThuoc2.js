@@ -1,11 +1,7 @@
 
 const carouselBox = function (selector) {
 
-<<<<<<< HEAD
     let slider = document.querySelector('#'+selector);
-=======
-    let slider = document.getElementById(selector);
->>>>>>> 87b91e64814be289dc3849c53f8e9fc75a721576
 
     let carousel = slider.querySelector('.carousel__container');
 
