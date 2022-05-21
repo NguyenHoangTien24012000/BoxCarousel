@@ -1,5 +1,5 @@
 function renderBox() {
-	this.css = `@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+  this.css = `@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -24,21 +24,32 @@ body {
   justify-content: space-between;
   padding: 8px;
   padding-bottom: 0;
-  margin: 5px 0px;
+  margin: 2px 0px 8px;
 }
 .box .box__brand .box__brand--left {
   display: flex;
 }
+.box .box__brand .box__logo--right{
+  padding-top:5px;
+}
 .box .box__brand .box__brand--left .brand__logo--left {
   margin-top: 2px;
 }
+.box .box__brand .box__brand--left .brand__logo--left img{
+  background: #0640d2;
+  width:31px;
+}
+.box .box__brand .box__logo--right img{
+ width: 88px;
+}
+
 .box .box__brand .brand__text--left {
   margin-left: 7px;
   margin-top: 3px;
 }
 .box .box__brand .brand__text--left .text--content {
   font-size: 14px;
-  color: #236c62;
+  color: #0640d2;
   line-height: 16.41px;
 }
 .box .box__content {
@@ -49,7 +60,7 @@ body {
 .box .box__content .content__border {
   width: 10px;
   height: 77px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+  background: #0640d2;
 }
 .box .box__content .content__banner {
   width: 280px;
@@ -76,7 +87,7 @@ body {
   display: flex;
   list-style: none;
   position: absolute;
-  left: 20%;
+  left: 18%;
 }
 .box .box__carousel .control .control__item {
   width: 6px;
@@ -139,13 +150,13 @@ body {
   font-size: 10px;
   border-radius: 10px;
   cursor: pointer;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+  background: #0640d2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box .box__note {
   width: 100%;
   height: 77px;
-  background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+  background: #0640d2;
   position: absolute;
   bottom: 0;
 }
@@ -164,22 +175,23 @@ body {
   font-weight: 300;
   opacity: 0.9;
 }
-/*# sourceMappingURL=styleBox1.css.map */`;
-	this.html = `<div id="box__tuThuoc">
+`;
+   
+  this.html = `<div id="box__tuThuoc">
     <div class="box" >
         <div class="box__container">
             <div class="box__brand">
                 <div class="box__brand--left">
-                    <div class="brand__logo--left">
-                        <img src="https://demo.admicro.vn/dtg/images/Vector.png" alt="logo">
-                    </div>
-                    <div class="brand__text--left">
-                        <h5 class="text--content">Tủ thuốc</h5>
-                        <h5 class="text--content">gia đình</h5>
-                    </div>
+                <div class="brand__logo--left">
+                <img src="https://demo.admicro.vn/buildboxtuthuoc/images/iconTuThuoc.png" alt="logo">
+            </div>
+            <div class="brand__text--left">
+                <h5 class="text--content">Tủ thuốc</h5>
+                <h5 class="text--content">gia đình</h5>
+            </div>
                 </div>
                 <div class="box__logo--right">
-                    <img src="https://demo.admicro.vn/dtg/images/image%2016.png" alt="logo">
+                    <img src="https://cdnstoremedia.com/adt/banners/nam2015/4043/min_html5/images/2022-05-12/honglethi/logo-long-chaau-2.jpg" alt="logo">
                 </div>
             </div>
             <div class="box__content">
@@ -187,7 +199,10 @@ body {
 
                 </div>
                 <div class="content__banner">
-                    <img class="banner__img" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                  <video width="280" height="157" controls autoplay muted>
+                  <source src="https://cdnstoremedia.com/adt/banners/nam2015/4043/min_html5/media/2022-05-09/lanvuthihoang/275238455_2281159572190797_5902030546499621941_n.mp4" type="video/mp4">
+              </video>
+              
                 </div>
                 <div class="content__border border--right">
 
@@ -205,34 +220,37 @@ body {
                 <div class="carousel__container">
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                            <img class="item__image" src="https://cdnstoremedia.com/adt/banners/nam2015/4043/min_html5/images/2022-05-12/honglethi/evening-primrose-oil-epo-1000mg.jpg" alt="">
                         </div>
                         <div class="carousel__item--text">
-                                 <h5 class="item__title">TPBVSK Kim Não Khang</h5>
-                            <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                                 <h5 class="item__title">Evening Primrose Oil (Epo) 1000Mg</h5>
+                            <p class="item__detail">Giúp chống oxy hóa tế bào, cải thiện nội tiết tố nữ, giúp mịn da.</p>
                         </div>
                         <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
                     </div>
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                            <img class="item__image" src="https://cdnstoremedia.com/adt/banners/nam2015/4043/min_html5/images/2022-05-12/honglethi/brauer-baby-child-immunity-support.jpg" alt="">
                         </div>
                         <div class="carousel__item--text">
-                                 <h5 class="item__title">TPBVSK Kim Não Khang</h5>
-                            <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                                 <h5 class="item__title">Brauer Baby Child Immunity Support</h5>
+                            <p class="item__detail">Bổ sung Betacaroten & D3, giúp tăng đề kháng & hấp thu canxi.</p>
                         </div>
                         <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
                     </div>
                     <div class="carousel__item">
                         <div class="carousel__item--image">
-                            <img class="item__image" src="https://demo.admicro.vn/dtg/images/image%205-3.png" alt="">
+                            <img class="item__image" src="https://cdnstoremedia.com/adt/banners/nam2015/4043/min_html5/images/2022-05-12/honglethi/brauer-baby-kids-liquid-vitamin-c.png" alt="">
                         </div>
                         <div class="carousel__item--text">
-                                 <h5 class="item__title">TPBVSK Kim Não Khang</h5>
-                            <p class="item__detail">Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên</p>
+                                 <h5 class="item__title">Brauer Baby Kids Liquid Vitamin C</h5>
+                            <p class="item__detail">Bổ sung vitamin C, hỗ trợ tăng cường sức đề kháng cho trẻ.</p>
                         </div>
                         <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
                     </div>
+
+                    <div class="carousel__item--button"><button class="btn__item"><a class="btn__text" src="">TÌM HIỂU NGAY</a></button></div>
+                </div>
                 </div>
             </div>
             <div class="box__note">
@@ -243,18 +261,18 @@ body {
         </div>
     </div>
 </div>`;
-	var elem = document.createElement("iframe")
-	Object.assign(elem, {
-		id: 'myIframe',
-		height: 600, // pixels
-		width: 300, // pixels
-		frameBorder : 0
-	})
-	document.getElementById('myDiv').appendChild(elem)
-	let iframe = document.getElementById("myIframe");
-	let doc = iframe.contentWindow
-	// doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
-	doc.document.write(`<style>${this.css}</style>${this.html}
+  var elem = document.createElement("iframe")
+  Object.assign(elem, {
+    id: 'myIframe',
+    height: 600, // pixels
+    width: 300, // pixels
+    frameBorder: 0
+  })
+  document.getElementById('myDiv').appendChild(elem)
+  let iframe = document.getElementById("myIframe");
+  let doc = iframe.contentWindow
+  // doc.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+  doc.document.write(`<style>${this.css}</style>${this.html}
     <script>
     {const carouselBox = function (selector) {
 
@@ -323,6 +341,6 @@ carouselBox('box__tuThuoc');
 }
     <\/script>
     `);
-    doc.document.close();
+  doc.document.close();
 }
 renderBox()
